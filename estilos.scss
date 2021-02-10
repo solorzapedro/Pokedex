@@ -82,6 +82,15 @@ h2{
         justify-content: space-around;
         color: var(--very-dark);
         
+        &-social{
+            text-align: center;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+
+            p{
+                letter-spacing: 0.09rem;
+            }
+        }
 
     }
 
