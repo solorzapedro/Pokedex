@@ -7,6 +7,7 @@
 
 html {
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -15,4 +16,43 @@ html {
 body{
     font-family: 'Kumbh Sans', sans-serif;
     background-color: var(--dark-cyan);
+}
+
+h2{
+    font-size: 2rem;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{    
+    background-color: white;
+    width: 326px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 6px 6px 9px 2px rgba(0, 0, 0, 0.4);
+
+    &-header{
+        width: 100%;
+        display: block;
+    }
+
+    &-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-img{            
+            border: 5px solid white;
+            border-radius: 50%;
+            margin-top: calc(-48px - 5px);
+            background-color: white;
+        }
+    }
+
+    
 }
