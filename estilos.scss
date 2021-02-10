@@ -20,6 +20,7 @@ body{
 
 h2{
     font-size: 2rem;
+    color: var(--very-dark);
 }
 
 .flex{
@@ -45,6 +46,7 @@ h2{
         display: flex;
         flex-direction: column;
         align-items: center;
+        border-bottom: 1px solid rgba(143, 143, 151, 0.274);;
 
         &-img{            
             border: 5px solid white;
@@ -52,6 +54,35 @@ h2{
             margin-top: calc(-48px - 5px);
             background-color: white;
         }
+
+        &-title{
+            margin-top: 2rem;
+            font-size: 1.8rem;
+
+            span{
+                color :var(--dark-grayish);
+                //color :rgb(143,143,151);
+                font-weight: 400;
+                margin-left: 0.5rem;
+            }
+        }
+
+        &-text{  
+            margin-top: 0rem;    
+            margin-bottom: 2rem;      
+            font-size: 1.4rem;
+            color: var(--dark-gray);
+            //color :rgb(143,143,151);
+            font-weight: 400;            
+        }
+    }
+
+    &-footer{
+        display: flex;
+        justify-content: space-around;
+        color: var(--very-dark);
+        
+
     }
 
     

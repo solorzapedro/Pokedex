@@ -23,6 +23,7 @@ body {
 
 h2 {
   font-size: 2rem;
+  color: var(--very-dark);
 }
 
 .flex {
@@ -63,6 +64,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid rgba(143, 143, 151, 0.274);
 }
 
 .card-body-img {
@@ -70,5 +72,33 @@ h2 {
   border-radius: 50%;
   margin-top: calc(-48px - 5px);
   background-color: white;
+}
+
+.card-body-title {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+.card-body-title span {
+  color: var(--dark-grayish);
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+.card-body-text {
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  color: var(--dark-gray);
+  font-weight: 400;
+}
+
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: var(--very-dark);
 }
 /*# sourceMappingURL=estilos.css.map */
