@@ -74,12 +74,13 @@ h2 {
   background-color: white;
 }
 
-.card-body-title {
+.card-body-nombre {
   margin-top: 2rem;
   font-size: 1.8rem;
+  text-transform: capitalize;
 }
 
-.card-body-title span {
+.card-body-nombre span {
   color: var(--dark-grayish);
   font-weight: 400;
   margin-left: 0.5rem;
