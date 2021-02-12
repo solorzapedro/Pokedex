@@ -13,15 +13,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../estilos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>    
         <main class="flex">
-            <article class="card">
+            
+        </main>
+
+        <template id="template-card">
+            <article class="card" data-aos="flip-up" data-aos-delay="200">
                 <img class="card-header" src="../images/bg-pattern-card.svg" alt="Fondo de tarjeta">
                 <div class="card-body">
                     <img class="card-body-img" src="/images/image-victor.jpg" alt="Imange de pokemon">
                     <!--TODO Cambiar nombre clase a: card-body-nombre-->
-                    <h2 class="card-body-title"> Victor Charst <span>26</span> </h2>
+                    <h2 class="card-body-nombre"> Victor Charst <span>26</span> </h2>
                     <!--TODO Cambiar nombre clase a: -->
                     <p class="card-body-text">London</p>
                 </div>
@@ -41,8 +46,12 @@
                     </div>
                 </div>
             </article>
-        </main>
+        </template>
         
         <script src="/js/app.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
   </body>
 </html>
