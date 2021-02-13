@@ -17,16 +17,17 @@
   </head>
   <body>    
         <main class="flex">
-            
+            <div id="items">
+            </div>            
         </main>
 
         <template id="template-card">
             <article class="card" data-aos="flip-up" data-aos-delay="200">
                 <img class="card-header" src="../images/bg-pattern-card.svg" alt="Fondo de tarjeta">
                 <div class="card-body">
-                    <img class="card-body-img" src="/images/image-victor.jpg" alt="Imange de pokemon">
+                    <img class="card-body-img" data-aos="zoom-in-up" data-aos-delay="500" src="/images/image-victor.jpg" alt="Imange de pokemon">
                     <!--TODO Cambiar nombre clase a: card-body-nombre-->
-                    <h2 class="card-body-nombre"> Victor Charst <span>26</span> </h2>
+                    <h2 class="card-body-nombre" data-aos="fade-right" data-aos-delay="500"> Victor Charst <span>26</span> </h2>
                     <!--TODO Cambiar nombre clase a: -->
                     <p class="card-body-text">London</p>
                 </div>
