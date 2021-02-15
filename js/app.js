@@ -38,7 +38,7 @@ const pintarCard = (listaPokemon) => {
         const clone = template.cloneNode(true);
 
         clone.querySelector('.card-body-img').setAttribute('src', poke.image);
-        clone.querySelector('.card-body-nombre').innerHTML = `${(poke.name)} <span>${poke.hp} hp</span>`
+        clone.querySelector('.card-body-nombre').innerHTML = `${poke.name} <span>${poke.hp} hp</span>`
         clone.querySelector('.card-body-text').textContent = poke.type;
 
         //TODO Cambiar nombre de social por stats, también hacerlo en html y sass

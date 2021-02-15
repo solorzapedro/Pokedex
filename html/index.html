@@ -1,58 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokedex</title>
-    <link rel="shortcut icon" href="../images/icono-pokedex4.png"image/x-icon">
-    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="shortcut icon" href="../images/icono-pokedex4.png" image/x-icon"> <link rel="stylesheet"
+        href="../css/normalize.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../estilos.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  </head>
-  <body>    
-        <main class="flex">
-            <div id="items">
-            </div>            
-        </main>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+</head>
 
-        <template id="template-card">
-            <article class="card" data-aos="flip-up" data-aos-delay="200">
-                <img class="card-header" src="../images/bg-pattern-card.svg" alt="Fondo de tarjeta">
-                <div class="card-body">
-                    <img class="card-body-img" data-aos="zoom-in-up" data-aos-delay="500" src="/images/image-victor.jpg" alt="Imange de pokemon">
-                    <!--TODO Cambiar nombre clase a: card-body-nombre-->
-                    <h2 class="card-body-nombre" data-aos="fade-right" data-aos-delay="500"> Victor Charst <span>26</span> </h2>
-                    <!--TODO Cambiar nombre clase a: -->
-                    <p class="card-body-text">London</p>
+<body>
+
+    <main class="flex">
+        <div id="items">
+        </div>
+    </main>
+
+    <template id="template-card">
+        <article class="card wow animate__animated animate__swing">
+            <img class="card-header" src="../images/bg-pattern-card.svg" alt="Fondo de tarjeta">
+            <div class="card-body">
+                <img class="card-body-img" src="/images/image-victor.jpg" alt="Imange de pokemon">
+                <!--TODO Cambiar nombre clase a: card-body-nombre-->
+                <h2 class="card-body-nombre"> Victor Charst <span>26</span>
+                </h2>
+                <!--TODO Cambiar nombre clase a: -->
+                <p class="card-body-text">London</p>
+            </div>
+            <div class="card-footer">
+                <!--TODO Cambiar nombre clase a: card-footer-stats-->
+                <div class="card-footer-social">
+                    <h3>80</h3>
+                    <p>Attack</p>
                 </div>
-                <div class="card-footer">
-                    <!--TODO Cambiar nombre clase a: card-footer-stats-->
-                    <div class="card-footer-social">
-                        <h3>80</h3>
-                        <p>Attack</p>
-                    </div>
-                    <div class="card-footer-social">
-                        <h3>803</h3>
-                        <p>Defense</p>
-                    </div>
-                    <div class="card-footer-social">
-                        <h3>1.4</h3>
-                        <p>Speed</p>
-                    </div>
+                <div class="card-footer-social">
+                    <h3>803</h3>
+                    <p>Defense</p>
                 </div>
-            </article>
-        </template>
-        
-        <script src="/js/app.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <div class="card-footer-social">
+                    <h3>1.4</h3>
+                    <p>Speed</p>
+                </div>
+            </div>
+        </article>
+    </template>
+
+    <script src="/js/app.js"></script>
+    <!--
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-  </body>
+    -->
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
 </html>
